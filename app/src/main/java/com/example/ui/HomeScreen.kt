@@ -568,9 +568,9 @@ fun ActionButtonsSection(
                         lineHeight = 18.sp
                     )
                     Text(
-                        text = if (isChinese) (if (hasSavedConversations) "可进化" else "需记忆") else (if (hasSavedConversations) "Ready" else "Needs Data"),
+                        text = if (isChinese) "AI开始进化" else "Neural Leap",
                         style = MaterialTheme.typography.labelSmall,
-                        color = if (hasSavedConversations) CyberAmber else Color.LightGray,
+                        color = CyberAmber,
                         lineHeight = 12.sp
                     )
                 }

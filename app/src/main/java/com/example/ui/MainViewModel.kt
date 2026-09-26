@@ -294,15 +294,6 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
      */
     fun startEvolution() {
         val savedList = allConversations.value
-        if (savedList.isEmpty()) {
-            _toastMessage.value = if (_isChinese.value) {
-                "请先完成并保存至少一次语音对话，让 AI 拥有记忆数据以供进化！"
-            } else {
-                "Please complete and save at least one voice chat first to give AI memories to evolve from!"
-            }
-            return
-        }
-
         val currentState = evolutionState.value ?: EvolutionStateEntity()
         _currentScreen.value = AppScreen.EVOLUTION_CEREMONY
         _evolutionStep.value = 0

@@ -38,7 +38,7 @@
     <string name="btn_end_conversation">结束</string>
     <string name="dialog_end_title">结束本次对话？</string>
     <string name="dialog_end_message">确定要结束本次对话吗？结束对话后，所有对话内容将自动保存至本地神经记忆库中。</string>
-    <string name="dialog_end_confirm">确认结束并保存</string>
+    <string name="dialog_end_confirm">再次确认</string>
     <string name="dialog_end_cancel">继续对话</string>
     <string name="toast_saved_success">对话已结束，并自动保存至记忆库！</string>
     <string name="permission_mic_needed">需要麦克风录音权限以便您用嘴与 AI 进行语音对话。</string>

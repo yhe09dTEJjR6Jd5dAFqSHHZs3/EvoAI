@@ -38,12 +38,12 @@ import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
+import androidx.compose.material.icons.automirrored.filled.VolumeUp
 import androidx.compose.material.icons.filled.Close
 import androidx.compose.material.icons.filled.GraphicEq
 import androidx.compose.material.icons.filled.Mic
 import androidx.compose.material.icons.filled.MicOff
 import androidx.compose.material.icons.filled.SmartToy
-import androidx.compose.material.icons.filled.VolumeUp
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
@@ -120,6 +120,13 @@ fun VoiceConversationScreen(
         hasMicPermission = isGranted
         if (isGranted) {
             viewModel.voiceManager.startListening(isChinese)
+        }
+    }
+
+    // Auto-request microphone permission so user does not need to manually locate grant buttons
+    LaunchedEffect(Unit) {
+        if (!hasMicPermission) {
+            permissionLauncher.launch(Manifest.permission.RECORD_AUDIO)
         }
     }
 
@@ -349,7 +356,7 @@ fun VoiceConversationScreen(
                         )
                         Spacer(modifier = Modifier.width(8.dp))
                         Text(
-                            text = if (isChinese) "结束对话" else "End Conversation",
+                            text = if (isChinese) "结束" else "End",
                             style = MaterialTheme.typography.titleMedium,
                             fontWeight = FontWeight.Bold
                         )
@@ -365,7 +372,7 @@ fun VoiceConversationScreen(
             onDismissRequest = { viewModel.dismissEndConfirmDialog() },
             title = {
                 Text(
-                    text = if (isChinese) "结束本次对话？" else "End Conversation?",
+                    text = if (isChinese) "结束对话？" else "End Conversation?",
                     fontWeight = FontWeight.Bold,
                     color = Color.White
                 )
@@ -373,7 +380,7 @@ fun VoiceConversationScreen(
             text = {
                 Text(
                     text = if (isChinese)
-                        "确定要结束本次对话吗？确认后对话将立即结束，且全部内容将自动保存至本地神经记忆库中！"
+                        "确定要结束本次对话吗？确认后对话将立即结束，且全部内容将自动保存至本地神经记忆库中。"
                     else
                         "Confirm ending this voice conversation? All dialogue will be automatically saved to your local neural memory archive.",
                     color = Color(0xFFC7D0DC)
@@ -387,7 +394,7 @@ fun VoiceConversationScreen(
                     modifier = Modifier.testTag("confirm_end_button")
                 ) {
                     Text(
-                        text = if (isChinese) "确认结束并保存" else "Confirm & Save",
+                        text = if (isChinese) "再次确认" else "Confirm",
                         fontWeight = FontWeight.Bold
                     )
                 }
@@ -485,7 +492,7 @@ fun AiOrbVisualizer(
             }
             isSpeaking -> {
                 Icon(
-                    imageVector = Icons.Default.VolumeUp,
+                    imageVector = Icons.AutoMirrored.Filled.VolumeUp,
                     contentDescription = null,
                     tint = Color.White,
                     modifier = Modifier.size(36.dp)
