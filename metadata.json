@@ -1,0 +1,6 @@
+{
+  "name": "EvoAI",
+  "description": "Offline voice AI companion with prompt-guided intelligence and autonomous neural evolution.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

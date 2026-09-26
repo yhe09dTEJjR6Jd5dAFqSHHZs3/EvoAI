@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">EvoAI</string>
+    <string name="app_tagline">Offline Voice Companion &amp; Autonomous Evolution</string>
+    
+    <!-- Navigation & Common -->
+    <string name="lang_switch">中文</string>
+    <string name="back">Back</string>
+    <string name="cancel">Cancel</string>
+    <string name="confirm">Confirm</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    
+    <!-- Home Screen -->
+    <string name="ai_status_offline">Offline Ready</string>
+    <string name="ai_generation_format">Gen %1$d • %2$s</string>
+    <string name="prompt_label">System Prompt / AI Persona</string>
+    <string name="prompt_placeholder">Enter prompt (e.g. Philosophical mentor, Cyber companion, Storyteller...)</string>
+    <string name="quick_prompts_title">Quick Presets</string>
+    <string name="btn_start_conversation">Start Voice Conversation</string>
+    <string name="btn_evolve">Evolve AI</string>
+    <string name="btn_evolve_ready">Ready to Evolve</string>
+    <string name="neural_stats_title">Neural Architecture</string>
+    <string name="stat_synapses">Synapses</string>
+    <string name="stat_conversations">Saved Chats</string>
+    <string name="stat_empathy">Empathy</string>
+    <string name="stat_creativity">Creativity</string>
+    <string name="stat_logic">Logic</string>
+    <string name="history_title">Saved Memory Archive</string>
+    <string name="history_empty">No conversations saved yet. Start a voice chat to build neural memories!</string>
+    
+    <!-- Voice Screen -->
+    <string name="voice_screen_title">Voice Dialogue</string>
+    <string name="voice_prompt_header">Active Persona: %1$s</string>
+    <string name="status_listening">Listening to you...</string>
+    <string name="status_thinking">AI is synthesizing...</string>
+    <string name="status_speaking">AI is speaking...</string>
+    <string name="status_ready_to_talk">Tap mic or speak into your microphone</string>
+    <string name="btn_end_conversation">End Conversation</string>
+    <string name="dialog_end_title">End Conversation?</string>
+    <string name="dialog_end_message">Confirm ending this voice conversation? All dialogue will be automatically saved to local neural memory.</string>
+    <string name="dialog_end_confirm">Confirm &amp; Save</string>
+    <string name="dialog_end_cancel">Continue Talking</string>
+    <string name="toast_saved_success">Conversation saved automatically to neural memory!</string>
+    <string name="permission_mic_needed">Microphone permission is needed for voice conversation.</string>
+    <string name="permission_grant">Grant Permission</string>
+    
+    <!-- Evolution Screen -->
+    <string name="evolution_title">Autonomous Neural Evolution</string>
+    <string name="evolution_in_progress">AI Neural Network Evolving...</string>
+    <string name="evolution_step_1">Harvesting episodic memories from saved conversations...</string>
+    <string name="evolution_step_2">Restructuring synaptic weights and personality matrix...</string>
+    <string name="evolution_step_3">Unlocking higher cognitive capabilities...</string>
+    <string name="evolution_complete">Evolution Milestone Reached!</string>
+    <string name="evolution_new_gen">Advanced to Generation %1$d</string>
+    <string name="evolution_unlocked_trait">Unlocked Trait: %1$s</string>
+    <string name="evolution_btn_complete">Accept Neural Leap</string>
+    <string name="evolution_not_enough_data">Start at least one conversation first so AI has memory data to evolve from!</string>
+
+    <!-- Quick Prompts -->
+    <string name="preset_philosopher">Philosophical Sage</string>
+    <string name="preset_cyber">Cyberpunk Companion</string>
+    <string name="preset_scientist">Futuristic Scientist</string>
+    <string name="preset_poet">Creative Dreamer</string>
+    <string name="preset_friend">Warm Confidant</string>
+</resources>

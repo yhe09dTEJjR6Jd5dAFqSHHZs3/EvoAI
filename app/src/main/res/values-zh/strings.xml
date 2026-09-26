@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">EvoAI 进化智心</string>
+    <string name="app_tagline">离线语音伴侣 · 自主神经进化</string>
+    
+    <!-- Navigation & Common -->
+    <string name="lang_switch">English</string>
+    <string name="back">返回</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确认</string>
+    <string name="close">关闭</string>
+    <string name="save">保存</string>
+    
+    <!-- Home Screen -->
+    <string name="ai_status_offline">完全离线可用</string>
+    <string name="ai_generation_format">第 %1$d 代 · %2$s</string>
+    <string name="prompt_label">输入提示词（设定 AI 人格/角色）</string>
+    <string name="prompt_placeholder">输入提示词（如：深刻的哲学家、温暖的知己、未来的赛博向导…）</string>
+    <string name="quick_prompts_title">快捷提示词预设</string>
+    <string name="btn_start_conversation">开始</string>
+    <string name="btn_evolve">进化</string>
+    <string name="btn_evolve_ready">可进化</string>
+    <string name="neural_stats_title">神经架构状态</string>
+    <string name="stat_synapses">突触数量</string>
+    <string name="stat_conversations">已存对话</string>
+    <string name="stat_empathy">共情指数</string>
+    <string name="stat_creativity">创造力</string>
+    <string name="stat_logic">逻辑深度</string>
+    <string name="history_title">已存对话记忆库</string>
+    <string name="history_empty">暂无保存的对话。输入提示词点击“开始”，开始和AI用嘴对话吧！</string>
+    
+    <!-- Voice Screen -->
+    <string name="voice_screen_title">实时语音对话</string>
+    <string name="voice_prompt_header">当前提示词设定：%1$s</string>
+    <string name="status_listening">正在聆听中（用嘴说话）…</string>
+    <string name="status_thinking">AI 正在构思回答…</string>
+    <string name="status_speaking">AI 正在发声回答…</string>
+    <string name="status_ready_to_talk">点击麦克风或直接用嘴说话</string>
+    <string name="btn_end_conversation">结束</string>
+    <string name="dialog_end_title">结束本次对话？</string>
+    <string name="dialog_end_message">确定要结束本次对话吗？结束对话后，所有对话内容将自动保存至本地神经记忆库中。</string>
+    <string name="dialog_end_confirm">确认结束并保存</string>
+    <string name="dialog_end_cancel">继续对话</string>
+    <string name="toast_saved_success">对话已结束，并自动保存至记忆库！</string>
+    <string name="permission_mic_needed">需要麦克风录音权限以便您用嘴与 AI 进行语音对话。</string>
+    <string name="permission_grant">授予麦克风权限</string>
+    
+    <!-- Evolution Screen -->
+    <string name="evolution_title">AI 自主神经进化</string>
+    <string name="evolution_in_progress">AI 神经网络正在进化中…</string>
+    <string name="evolution_step_1">正在解析已保存的对话记忆与情感情境…</string>
+    <string name="evolution_step_2">正在重构神经突触权重，提炼个性与知识…</string>
+    <string name="evolution_step_3">正在激活更高阶的认知模块与表达能力…</string>
+    <string name="evolution_complete">进化完成！认知跃迁！</string>
+    <string name="evolution_new_gen">成功跃迁至 第 %1$d 代</string>
+    <string name="evolution_unlocked_trait">解锁新特质：%1$s</string>
+    <string name="evolution_btn_complete">完成进化</string>
+    <string name="evolution_not_enough_data">请先至少完成一次对话，让 AI 拥有记忆数据以供进化学习！</string>
+
+    <!-- Quick Prompts -->
+    <string name="preset_philosopher">哲学家（苏格拉底式思辨）</string>
+    <string name="preset_cyber">赛博旅伴（冷幽默与未来科技）</string>
+    <string name="preset_scientist">未来科学家（严谨前沿探索）</string>
+    <string name="preset_poet">浪漫诗人（诗意与想象力）</string>
+    <string name="preset_friend">知心密友（温暖倾听共情）</string>
+</resources>
